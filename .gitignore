@@ -1,0 +1,21 @@
+# Unity generated files
+/*.csproj
+/*.sln
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]serSettings/
+
+# ML-Agents conflicting folder
+Assets/ml-agents-develop/
+Assets/ml-agents-develop.meta
+
+# VS Code
+/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
