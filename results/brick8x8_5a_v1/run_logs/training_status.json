@@ -1,0 +1,38 @@
+{
+    "BrickAgent": {
+        "checkpoints": [
+            {
+                "steps": 49922,
+                "file_path": "results/brick8x8_5a_v1/BrickAgent/BrickAgent-49922.onnx",
+                "reward": 0.09215691672285008,
+                "creation_time": 1759891324.6092772,
+                "auxillary_file_paths": [
+                    "results/brick8x8_5a_v1/BrickAgent/BrickAgent-49922.pt"
+                ]
+            },
+            {
+                "steps": 63742,
+                "file_path": "results/brick8x8_5a_v1/BrickAgent/BrickAgent-63742.onnx",
+                "reward": 0.14855693054270055,
+                "creation_time": 1759891573.3217416,
+                "auxillary_file_paths": [
+                    "results/brick8x8_5a_v1/BrickAgent/BrickAgent-63742.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 63742,
+            "file_path": "results/brick8x8_5a_v1/BrickAgent.onnx",
+            "reward": 0.14855693054270055,
+            "creation_time": 1759891573.3217416,
+            "auxillary_file_paths": [
+                "results/brick8x8_5a_v1/BrickAgent/BrickAgent-63742.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cu102"
+    }
+}
