@@ -1,0 +1,65 @@
+{
+    "BrickAgent": {
+        "checkpoints": [
+            {
+                "steps": 349999,
+                "file_path": "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-349999.onnx",
+                "reward": 0.9171838025789003,
+                "creation_time": 1759976386.860419,
+                "auxillary_file_paths": [
+                    "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-349999.pt"
+                ]
+            },
+            {
+                "steps": 399991,
+                "file_path": "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-399991.onnx",
+                "reward": 0.9183538447060579,
+                "creation_time": 1759980314.5737712,
+                "auxillary_file_paths": [
+                    "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-399991.pt"
+                ]
+            },
+            {
+                "steps": 449992,
+                "file_path": "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-449992.onnx",
+                "reward": 0.9192110439160478,
+                "creation_time": 1759986490.1685128,
+                "auxillary_file_paths": [
+                    "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-449992.pt"
+                ]
+            },
+            {
+                "steps": 499992,
+                "file_path": "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-499992.onnx",
+                "reward": 0.9193333503272798,
+                "creation_time": 1759992692.5601518,
+                "auxillary_file_paths": [
+                    "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-499992.pt"
+                ]
+            },
+            {
+                "steps": 500008,
+                "file_path": "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-500008.onnx",
+                "reward": 0.919340676331258,
+                "creation_time": 1759992693.6753962,
+                "auxillary_file_paths": [
+                    "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-500008.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500008,
+            "file_path": "results/brick8x8_goals2d_v1/BrickAgent.onnx",
+            "reward": 0.919340676331258,
+            "creation_time": 1759992693.6753962,
+            "auxillary_file_paths": [
+                "results/brick8x8_goals2d_v1/BrickAgent/BrickAgent-500008.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cu102"
+    }
+}

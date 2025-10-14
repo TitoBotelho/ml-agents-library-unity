@@ -16,8 +16,13 @@ public class BrickController : MonoBehaviour
     // Campo renomeado definitivamente (removidos FormerlySerializedAs)
     [HideInInspector] public int positionX; // X
     [HideInInspector] public int positionZ; // Z
-    const int k_SmallGoalPosition = 7;
-    const int k_LargeGoalPosition = 3; 
+
+    [Header("Goal Positions (fixos)")]
+    [SerializeField] int smallX = 0;
+    [SerializeField] int smallZ = 0;
+    [SerializeField] int largeX = 7;
+    [SerializeField] int largeZ = 7;
+
     public GameObject largeGoal;
     public GameObject smallGoal;
     const int k_MinPosition = 0;
@@ -34,8 +39,13 @@ public class BrickController : MonoBehaviour
         positionX = 3;
         positionZ = 3;
         transform.position = new Vector3(positionX, 0f, positionZ);
-        smallGoal.transform.position = new Vector3(k_SmallGoalPosition, 0f, 0f);
-        largeGoal.transform.position = new Vector3(k_LargeGoalPosition, 0f, 0f);
+        // Garantir metas dentro do limite
+        smallX = Mathf.Clamp(smallX, k_MinPosition, k_MaxPosition);
+        smallZ = Mathf.Clamp(smallZ, k_MinPosition, k_MaxPosition);
+        largeX = Mathf.Clamp(largeX, k_MinPosition, k_MaxPosition);
+        largeZ = Mathf.Clamp(largeZ, k_MinPosition, k_MaxPosition);
+        smallGoal.transform.position = new Vector3(smallX, 0f, smallZ);
+        largeGoal.transform.position = new Vector3(largeX, 0f, largeZ);
     }
 
     /// <summary>
@@ -57,18 +67,15 @@ public class BrickController : MonoBehaviour
         if (positionX > k_MaxPosition) positionX = k_MaxPosition;
         if (positionZ < k_MinPosition) positionZ = k_MinPosition;
         if (positionZ > k_MaxPosition) positionZ = k_MaxPosition;
-
         transform.position = new Vector3(positionX, 0f, positionZ);
-
         m_Agent.AddReward(-0.01f);
         CheckGoals();
     }
 
     void CheckGoals()
     {
-        bool onSmall = positionX == k_SmallGoalPosition && positionZ == 0;
-        bool onLarge = positionX == k_LargeGoalPosition && positionZ == 0;
-
+        bool onSmall = positionX == smallX && positionZ == smallZ;
+        bool onLarge = positionX == largeX && positionZ == largeZ;
         if (onSmall)
         {
             m_Agent.AddReward(0.1f);
