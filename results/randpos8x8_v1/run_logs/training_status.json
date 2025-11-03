@@ -1,0 +1,65 @@
+{
+    "RandomPositionAgent": {
+        "checkpoints": [
+            {
+                "steps": 949999,
+                "file_path": "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-949999.onnx",
+                "reward": 0.8899905496532514,
+                "creation_time": 1761839706.8498714,
+                "auxillary_file_paths": [
+                    "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-949999.pt"
+                ]
+            },
+            {
+                "steps": 999993,
+                "file_path": "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-999993.onnx",
+                "reward": 0.894309224168721,
+                "creation_time": 1761849062.896352,
+                "auxillary_file_paths": [
+                    "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-999993.pt"
+                ]
+            },
+            {
+                "steps": 1049998,
+                "file_path": "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-1049998.onnx",
+                "reward": 0.884968851620685,
+                "creation_time": 1761858336.392092,
+                "auxillary_file_paths": [
+                    "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-1049998.pt"
+                ]
+            },
+            {
+                "steps": 1099993,
+                "file_path": "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-1099993.onnx",
+                "reward": 0.8910468881949782,
+                "creation_time": 1761867010.0196147,
+                "auxillary_file_paths": [
+                    "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-1099993.pt"
+                ]
+            },
+            {
+                "steps": 1110808,
+                "file_path": "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-1110808.onnx",
+                "reward": 0.8874098977114866,
+                "creation_time": 1761867733.0158818,
+                "auxillary_file_paths": [
+                    "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-1110808.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1110808,
+            "file_path": "results/randpos8x8_v1/RandomPositionAgent.onnx",
+            "reward": 0.8874098977114866,
+            "creation_time": 1761867733.0158818,
+            "auxillary_file_paths": [
+                "results/randpos8x8_v1/RandomPositionAgent/RandomPositionAgent-1110808.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cu102"
+    }
+}
