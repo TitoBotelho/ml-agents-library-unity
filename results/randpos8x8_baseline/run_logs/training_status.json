@@ -1,0 +1,29 @@
+{
+    "RandomPositionAgent": {
+        "checkpoints": [
+            {
+                "steps": 1839,
+                "file_path": "results/randpos8x8_baseline/RandomPositionAgent/RandomPositionAgent-1839.onnx",
+                "reward": -0.4216666031214926,
+                "creation_time": 1762171043.6386762,
+                "auxillary_file_paths": [
+                    "results/randpos8x8_baseline/RandomPositionAgent/RandomPositionAgent-1839.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1839,
+            "file_path": "results/randpos8x8_baseline/RandomPositionAgent.onnx",
+            "reward": -0.4216666031214926,
+            "creation_time": 1762171043.6386762,
+            "auxillary_file_paths": [
+                "results/randpos8x8_baseline/RandomPositionAgent/RandomPositionAgent-1839.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cu102"
+    }
+}
